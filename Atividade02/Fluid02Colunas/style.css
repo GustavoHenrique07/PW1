@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .coluna-esquerda, .coluna-direita {
+    padding: 20px;
+  }
+  
+  .coluna-esquerda {
+    width: 60%; 
+    background-color: #f0f0f0;
+  }
+  
+  .coluna-direita {
+    width: 40%; 
+    background-color: #d0d0d0;
+  }
+  
