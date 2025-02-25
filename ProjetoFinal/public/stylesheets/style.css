@@ -1,0 +1,321 @@
+/* Navbar */
+.navbar {
+  margin-bottom: 0;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar-brand:hover {
+  color: #0b0b0b;
+}
+
+.nav-link {
+  color: #333;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: #000000;
+}
+
+/* ✅ Ajuste dos botões para evitar efeito azul ao clicar */
+.btn-outline-primary {
+  border-color: #000000;
+  color: #000000;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #000000;
+  color: #fff;
+  border-color: #000000;
+}
+
+/* ✅ Remove o azul ao clicar */
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: white !important;
+  color: black !important;
+  border-color: black !important;
+  box-shadow: none !important;
+}
+
+/* ✅ Remove qualquer contorno azul ao focar */
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Hero Section (Banner) */
+.hero {
+  margin-top: 0;
+  padding-top: 0;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #000;
+  font-size: 80px;
+}
+
+.hero p {
+  margin: 10px 0;
+  color: black;
+  font-size: 25px;
+}
+
+.hero .btn {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.hero .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Estilização para os cards do carrossel mantendo o tamanho original */
+.category-card {
+  margin: 0 40px;
+  text-align: center;
+}
+
+.category-card .card {
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.category-card .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Ajuste da imagem dentro do card */
+.category-card .card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilização do título abaixo do card */
+.category-title {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 500px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.contact-box .btn-dark {
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.contact-box .btn-dark:hover {
+  background-color: #333;
+}
+
+/* Cards de Produtos */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #000000;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+  color: #ddd;
+}
+
+/* Ajuste da barra de pesquisa oculta */
+#searchContainer {
+  transition: all 0.3s ease-in-out;
+  display: none;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* ✅ Remove efeito azul ao clicar nos botões */
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: white !important;
+  color: black !important;
+  border-color: black !important;
+  box-shadow: none !important;
+}
+
+/* Estilização do dropdown de resultados */
+#searchResults {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Modal do carrinho */
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+#cartContent div {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-form {
+  gap: 10px;
+}
+
+.filter-form {
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-form input[type="radio"] {
+  margin-right: 5px;
+}
+
+.search-form input {
+  max-width: 400px;
+}
+
+.filter-form span {
+  font-size: 1.1rem;
+}
+
+.filter-form button {
+  padding: 5px 15px;
+}
+
+/* Ajuste de formatação para os botões, mantendo os tamanhos antigos */
+.btn-primary {
+  background-color: transparent !important; /* Fundo transparente */
+  color: #000 !important; /* Texto preto */
+  border: 2px solid #000 !important; /* Borda preta */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: all 0.3s ease-in-out; /* Suaviza a transição */
+}
+
+/* Efeito ao passar o mouse */
+.btn-primary:hover {
+  background-color: #000 !important; /* Fundo preto */
+  color: #fff !important; /* Texto branco */
+}
+
+/* Remove o efeito azul ao clicar ou focar */
+.btn-primary:focus, .btn-primary:active {
+  background-color: #000 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+/* Ajuste do Card do Carrinho */
+.cart-item-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Ajuste da imagem dentro do Carrinho */
+.cart-product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}

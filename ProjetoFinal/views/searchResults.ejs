@@ -1,0 +1,26 @@
+<%- include('layouts/header') %>
+<%- include('layouts/navbar') %>
+
+<div class="container mt-5">
+  <h2>Resultados para "<%= query %>"</h2>
+  <div class="row">
+    <% if (products.length > 0) { %>
+      <% products.forEach(product => { %>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="<%= product.imagem %>" class="card-img-top" alt="<%= product.nome %>">
+            <div class="card-body">
+              <h5 class="card-title"><%= product.nome %></h5>
+              <p class="card-text"><%= product.descricao %></p>
+              <p class="card-text"><strong>R$ <%= product.preco.toFixed(2) %></strong></p>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p class="text-center">Nenhum produto encontrado para "<%= query %>".</p>
+    <% } %>
+  </div>
+</div>
+
+<%- include('layouts/footer') %>

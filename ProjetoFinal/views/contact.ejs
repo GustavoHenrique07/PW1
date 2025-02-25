@@ -1,0 +1,25 @@
+<%- include('layouts/header') %>
+<%- include('layouts/navbar') %>
+
+<div class="contact-section d-flex justify-content-center align-items-center vh-100">
+  <div class="contact-form-container w-50 p-4 bg-light rounded shadow">
+    <h2 class="text-center mb-4">Fale Conosco</h2>
+    <form class="contact-form">
+      <div class="mb-3">
+        <label for="nome" class="contact-label">Nome</label>
+        <input type="text" class="contact-input form-control" id="nome" placeholder="Seu nome" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="contact-label">Email</label>
+        <input type="email" class="contact-input form-control" id="email" placeholder="Seu email" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensagem" class="contact-label">Mensagem</label>
+        <textarea class="contact-input form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+      </div>
+      <button type="submit" class="contact-btn btn btn-dark w-100">Enviar</button>
+    </form>
+  </div>
+</div>
+
+<%- include('layouts/footer') %>

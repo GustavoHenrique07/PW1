@@ -1,0 +1,55 @@
+<%- include('layouts/header') %>
+<%- include('layouts/navbar') %>
+
+<!-- Hero Section -->
+<section class="hero" style="background-image: url('/images/Banner.jpg');">
+  <div class="container text-center text-white">
+    <h1 class="display-4">Nova Coleção</h1>
+    <p class="lead">Explore novos produtos e best-sellers.</p>
+    <a href="/products" class="btn btn-primary">Ver Coleção</a>
+  </div>
+</section>
+
+<!-- Seção de Categorias -->
+<section class="categories py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Compre por Categoria</h2>
+    <br>
+    <div class="row justify-content-center">
+      <!-- Card Masculino -->
+      <div class="col-md-4">
+        <div class="card category-card">
+          <img src="/images/men.jpg" class="card-img-top" alt="Masculino">
+          <div class="card-body text-center">
+            <h5 class="category-title">Masculino</h5>
+            <a href="/products?category=Masculino" class="btn btn-primary">Ver Produtos</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card Feminino -->
+      <div class="col-md-4">
+        <div class="card category-card">
+          <img src="/images/women.jpg" class="card-img-top" alt="Feminino">
+          <div class="card-body text-center">
+            <h5 class="category-title">Feminino</h5>
+            <a href="/products?category=Feminino" class="btn btn-primary">Ver Produtos</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Infantil -->
+      <div class="col-md-4">
+        <div class="card category-card">
+          <img src="/images/kids.jpg" class="card-img-top" alt="Infantil">
+          <div class="card-body text-center">
+            <h5 class="category-title">Infantil</h5>
+            <a href="/products?category=Infantil" class="btn btn-primary">Ver Produtos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('layouts/footer') %>
